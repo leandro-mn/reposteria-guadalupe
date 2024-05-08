@@ -1,0 +1,232 @@
+/* generales */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size:62.5%;
+}
+/* header */
+.logo{
+    width: 110px;
+}
+.header-bg{
+background-color: #CDB4DB;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    margin: 0%;
+    padding: 0;
+}
+nav ul li{
+    margin-right: 3rem;
+}
+.nav-item{
+    background-color: #ffe5ec;
+    border-radius: 10rem;
+    font-size: 2rem;
+    
+}
+/* main index */
+.slide{
+    width:100%;
+    height: 100%;
+}
+.carousel-inner{
+    height: 60rem;
+    position: relative;
+}
+.subtitulo div img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.main-texto{
+    position: absolute;
+    top: 0;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+    margin-top: 2rem;
+    color: #212529;
+    text-decoration: overline;
+}
+.main-texto h1{
+    font-family: "Dancing Script", cursive;
+    font-size: 6rem;
+    background-color: #CDB4DB;
+    border-radius: 10rem;
+}
+.main-texto h3{
+    font-family: "Playfair Display", serif;
+    font-size: 2.5rem;
+    background-color: #CDB4DB;
+    border-radius: 10rem;
+}
+.title-index{
+    width: 70%;
+    margin-right:15% ;
+    margin-left: 15%;
+}
+
+.nosotros h3{
+    font-family: "Playfair Display", serif;
+}
+/* main NOSOTROS */
+section div h3{
+    display: flex;
+    justify-content: center;
+    font-size: 3rem
+}
+.nosotros{
+    background-color:#ffe5ec ;
+    font-size: 1.7rem;
+}
+.nosotros p{
+    margin-bottom: 0;
+}
+/* especialidades */
+.especialidades div img{
+    width: 30rem;
+}
+.especialidades{
+    display: flex;
+    gap: 8rem;
+    justify-content: center;
+    background-color:#CDB4DB ;
+    padding: 3rem;
+    margin-bottom: 0;
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+}
+/* productos */
+.nav-2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.nav-2 ul{
+    text-decoration: none;
+}
+.nav-2 li{
+    margin-right: 3rem;
+    background-color: #ffe5ec;
+    border-radius: 10rem;
+}
+
+.nav-productos ul li a{
+    text-decoration: none;
+    font-size: 2rem;
+    color: black;
+}
+.catalogo-titulo{
+    text-align: center;
+    background-color: #ffcdb2;
+    margin-bottom: 0;
+    padding: 1rem;
+    font-family: "Dancing Script", cursive;
+    font-size: 4rem;
+}
+.catalogo section{ 
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    background-color: #ffcdb2;
+}
+.catalogo h3{
+    font-size: 2rem;
+}
+.catalogo img{
+    width: 45rem;
+}
+/* comprar */
+.form{
+    font-family: "Playfair Display", serif;
+    font-weight: 400;
+    background-color:#FFB4A2 ;
+    height: 75rem;
+    font-size: 2rem;
+    padding-left: 2rem;
+}
+.form legend{
+    text-align: center;
+    font-weight: 500;
+    font-size: 5rem;
+    font-family: "Dancing Script", cursive;
+}
+/* footer */
+.footer{
+    display: flex;
+    justify-content: center;
+    background-color: #ffe5ec;
+}
+/* Media querys /
+/ Media query (Tablet) */
+@media (max-width: 1024px){
+    /* especialidades */
+    .nav-item{
+        text-align: center
+    }
+    .navbar-nav{
+        gap: 1rem;
+        width: 50%;
+    margin-right: 15%;
+    margin-left: 25%;
+    }
+    .especialidades{
+        gap: 4rem;
+    }
+    /* catalogo */
+    .catalogo section{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+    .catalogo img{
+        width: 35rem;
+    }
+}
+/* Media query (Celular) */
+@media (max-width: 768px){
+    /* nav */
+    .nav-item{
+        text-align: center
+    }
+    .navbar-nav{
+        gap: 1rem;
+        width: 50%;
+    margin-right: 15%;
+    margin-left: 25%;
+    }
+    /* header */
+    .main-texto h1{
+        font-family: "Dancing Script", cursive;
+        font-size: 2rem;
+        background-color: #CDB4DB;
+        border-radius: 5rem;
+    }
+    .main-texto h3{
+        font-family: "Playfair Display", serif;
+        font-size: 1.2rem;
+        background-color: #CDB4DB;
+        border-radius: 5rem;
+    }
+    /* especialidades */
+    .especialidades{
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+    /* catalogo */
+    .catalogo img{
+        width: 90%;
+    }
+    .catalogo section{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 1rem;
+    }
+    
+}
+
